@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{th/layout}"
+      th:with="section='user'">
+<head>
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE" th:text="#{title.users}"></title>
+    <!-- section local resources -->
+    <script th:src="@{/sec.js}"></script>
+    <link rel="stylesheet" th:href="@{/sec.css}"/>
+</head>
+</html>
